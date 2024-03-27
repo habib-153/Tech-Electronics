@@ -19,7 +19,7 @@ const MyCart = () => {
         }
         
       }
-      console.log(added);
+      //console.log(added);
       setCarts(added);
 
     }

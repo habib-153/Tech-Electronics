@@ -15,7 +15,7 @@ const Register = () => {
     const email = form.email.value;
     const photoUrl = form.photoUrl.value;
     const password = form.password.value;
-    console.log(name, email, photoUrl, password)
+    //console.log(name, email, photoUrl, password)
 
     if(password.length < 6){
       toast.error('Password should be at 6 characters or longer');
@@ -27,7 +27,7 @@ const Register = () => {
   }
     createUser(email, password)
     .then(res =>{
-      console.log(res.user)
+      //console.log(res.user)
       handleUpdateProfile(name, photoUrl)
       .then(()=>{
         toast.success("Registration successful")

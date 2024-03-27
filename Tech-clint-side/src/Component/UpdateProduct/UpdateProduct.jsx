@@ -5,6 +5,7 @@ const UpdateProduct = () => {
     const product = useLoaderData()
     console.log(product)
     const { _id, product_name, product_image, price, brand_name, brand_image, rating, type} = product
+    
     const handleUpdateProduct = e =>{
         e.preventDefault()
         const form = e.target;
@@ -18,7 +19,7 @@ const UpdateProduct = () => {
 
         const updatedProd = {product_name, product_image, price, brand_name, brand_image, rating, type}
 
-        console.log(updatedProd);
+        //console.log(updatedProd);
 
         fetch(`https://assignment-10-server-side-r8a1in9pj-habibur-rahmans-projects.vercel.app/brandProd/${_id}`,{
             method:'PUT',
@@ -29,7 +30,7 @@ const UpdateProduct = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            //console.log(data);
             if(data.modifiedCount > 0){
                 Swal.fire({
                     title: 'Success',

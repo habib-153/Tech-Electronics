@@ -16,7 +16,7 @@ const AddProduct = () => {
 
         const newProd = {product_name, product_image, price, brand_name, brand_image, rating, type, description}
 
-        console.log(newProd);
+        //console.log(newProd);
 
         fetch('https://assignment-10-server-side-r8a1in9pj-habibur-rahmans-projects.vercel.app/brandProd',{
             method:'POST',
@@ -27,7 +27,7 @@ const AddProduct = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            //console.log(data);
             if(data.insertedId){
                 Swal.fire({
                     title: 'Success',

@@ -4,7 +4,7 @@ const CartInfo = ({ cart }) => {
   const { _id, product_name, brand_name, product_image, price } = cart;
   const handleDelete = () =>{
    
-    console.log(_id)
+    //console.log(_id)
 
   }
   return (

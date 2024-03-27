@@ -28,8 +28,8 @@ const Product = () => {
       arr.push(name);
       display.push(allProd);
     }
-    console.log(arr);
-    console.log(display);
+    //console.log(arr);
+    //console.log(display);
   });
   return (
     <div>

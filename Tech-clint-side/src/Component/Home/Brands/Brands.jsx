@@ -14,17 +14,17 @@ const Brands = () => {
         .then(data => setBrandData(data))
     },[])
 
-    console.log(brandsData)
+    //console.log(brandsData)
     brandsData.forEach(brands =>{
-        console.log(brands.brand_name)
+        //console.log(brands.brand_name)
             const name = brands.brand_name
             if(!bNames[name]){
                 bNames[name] = true;
                 arr.push(name);
                 display.push(brands)
             }
-            console.log(arr)
-            console.log(display)
+            //console.log(arr)
+            //console.log(display)
     })
    
 
